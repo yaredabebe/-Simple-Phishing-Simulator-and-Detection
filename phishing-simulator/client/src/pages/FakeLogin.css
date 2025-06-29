@@ -1,0 +1,445 @@
+Base Styles
+.bank-login-container {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* Header */
+.bank-header {
+  background: linear-gradient(135deg, #1a3a8f, #0d2565);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.bank-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.bank-logo i {
+  margin-right: 10px;
+}
+
+.bank-slogan {
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+/* Login Card */
+.login-card {
+  background: white;
+  width: 100%;
+  max-width: 500px;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  position: relative;
+}
+
+/* Alerts */
+.urgent-alert {
+  background-color: #fff3e0;
+  border-left: 4px solid #ff9800;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  color: #e65100;
+}
+
+.urgent-alert.blink {
+  animation: blink-alert 1.5s infinite;
+}
+
+@keyframes blink-alert {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+.security-notice {
+  background-color: #e8f5e9;
+  border-left: 4px solid #4caf50;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #2e7d32;
+}
+
+/* Forms */
+.login-form {
+  margin-top: 1.5rem;
+}
+
+.login-form h2 {
+  color: #1a3a8f;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 1.2rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+.input-group input:focus {
+  border-color: #1a3a8f;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(26, 58, 143, 0.1);
+}
+
+.forgot-password {
+  text-align: right;
+  margin-top: 0.5rem;
+}
+
+.forgot-password a {
+  color: #1a3a8f;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.login-button, .verify-button {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #1a3a8f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+
+.login-button:hover, .verify-button:hover {
+  background-color: #142d6e;
+}
+
+.login-button:disabled, .verify-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Educational Elements */
+.red-flags-section {
+  margin: 1.5rem 0;
+}
+
+.analyze-btn {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: transparent;
+  color: #1a3a8f;
+  border: 1px solid #1a3a8f;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.analyze-btn:hover {
+  background-color: #f0f4ff;
+}
+
+.red-flags-list {
+  background-color: #ffebee;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.red-flags-list h4 {
+  color: #c62828;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.red-flags-list ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.red-flags-list li {
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.red-flag-icon {
+  color: #c62828;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.green-flag-icon {
+  color: #2e7d32;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.security-tips {
+  background-color: #e8f5e9;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+.security-tips h4 {
+  color: #2e7d32;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.security-tips ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.security-tips li {
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* 2FA Section */
+.two-factor-auth {
+  text-align: center;
+}
+
+.timer-warning {
+  color: #d32f2f;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.resend-options {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.resend-options a {
+  color: #1a3a8f;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.resend-options a:hover {
+  text-decoration: underline;
+}
+
+.training-note {
+  background-color: #e3f2fd;
+  border-radius: 4px;
+  padding: 0.8rem;
+  margin: 1.2rem 0;
+  font-size: 0.85rem;
+}
+
+.training-note code {
+  background-color: #bbdefb;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: monospace;
+}
+
+/* 2FA Bypass Demo */
+.bypass-demo {
+  padding: 1.5rem;
+}
+
+.bypass-demo h3 {
+  color: #d32f2f;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.attack-flow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.flow-step {
+  text-align: center;
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.step-number {
+  background-color: #d32f2f;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 0.8rem;
+  font-weight: bold;
+}
+
+.flow-arrow {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.protection-tips {
+  background-color: #e8f5e9;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.protection-tips h4 {
+  color: #2e7d32;
+  margin-top: 0;
+}
+
+.protection-tips ul {
+  padding-left: 1.5rem;
+  margin: 1rem 0 0;
+}
+
+.protection-tips li {
+  margin-bottom: 0.8rem;
+}
+
+.continue-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.continue-btn:hover {
+  background-color: #1b5e20;
+}
+
+/* Footer */
+.bank-footer {
+  background-color: #f0f2f5;
+  padding: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #1a3a8f;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+/* Training Disclaimer */
+.training-disclaimer {
+  background-color: #e3f2fd;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* Error Message */
+.error-message {
+  background-color: #ffebee;
+  color: #d32f2f;
+  padding: 0.8rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .login-card {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .bank-header {
+    padding: 1rem;
+  }
+  
+  .bank-logo {
+    font-size: 1.5rem;
+  }
+  
+  .attack-flow {
+    flex-direction: column;
+  }
+  
+  .flow-step {
+    margin-bottom: 1.5rem;
+  }
+  
+  .flow-arrow {
+    transform: rotate(90deg);
+    margin: 0.5rem 0;
+  }
+}
+

@@ -1,0 +1,17 @@
+{
+    "suspicious_domains": ["login-", "verify-", "secure-", "account-", "auth-"],
+    "brands": {
+        "paypal": ["paypa1", "paypaI", "paypai", "paypa!"],
+        "microsoft": ["micros0ft", "rnicrosoft", "micr0soft"],
+        "amazon": ["arnazon", "amaz0n", "amaz0n"],
+        "apple": ["aple", "app1e", "appie"],
+        "bankofamerica": ["bankofarnerica", "b0fa", "bank0famerica"]
+    },
+    "urgent_keywords": [
+        "urgent", "immediately", "locked", "suspended",
+        "verify", "action required", "security alert",
+        "account closure", "limited time", "click now"
+    ],
+    "fake_tlds": [".tk", ".gq", ".ml", ".cf", ".ga", ".xyz", ".buzz"],
+    "ip_address_urls": true
+}

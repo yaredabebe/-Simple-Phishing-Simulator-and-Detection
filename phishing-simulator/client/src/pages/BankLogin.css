@@ -1,0 +1,259 @@
+/* Main container */
+.bank-login-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Header styles */
+.bank-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.bank-logo {
+  display: flex;
+  align-items: center;
+}
+
+.bank-logo img {
+  height: 40px;
+  margin-right: 15px;
+}
+
+.security-badge {
+  color: #2a7f40;
+  font-weight: bold;
+}
+
+/* Login card */
+.login-card {
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.login-card h2 {
+  margin-bottom: 25px;
+  color: #1a3e6f;
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.remember-me input {
+  margin-right: 8px;
+}
+
+.forgot-password {
+  background: none;
+  border: none;
+  color: #1a3e6f;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Buttons */
+.login-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #1a3e6f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #0d2b52;
+}
+
+.login-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.secondary-button {
+  padding: 12px 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Spinner */
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Alerts */
+.alert {
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Success state */
+.login-success {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.success-icon {
+  font-size: 60px;
+  color: #2a7f40;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.bank-footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  border-top: 1px solid #e1e1e1;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #1a3e6f;
+  text-decoration: none;
+}
+
+/* 2FA specific styles */
+.auth-form {
+  text-align: center;
+}
+
+.auth-form h3 {
+  color: #1a3e6f;
+  margin-bottom: 10px;
+}
+
+.auth-form p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+/* Security tips */
+.security-tips {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.security-tips h4 {
+  color: #1a3e6f;
+  margin-bottom: 10px;
+}
+
+.security-tips ul {
+  padding-left: 20px;
+  color: #666;
+}
+/* Security alert styles */
+.security-alert {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff8e1;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.alert-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.alert-icon.warning {
+  color: #ff9800;
+}
+
+.security-action-button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #1a3e6f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Security info buttons */
+.security-info-button {
+  background: none;
+  border: none;
+  color: #1a3e6f;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.security-info-button i {
+  margin-right: 5px;
+}
